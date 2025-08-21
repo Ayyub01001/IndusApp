@@ -1,6 +1,7 @@
 // src/pages/About.jsx
 import React from "react";
 import Footer from "../components/Footer";
+import abimg from "../assets/img/abimg.jpg"
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
           </div>
           <div className="flex justify-center">
             <img
-              src="/images/about-hero.jpg"
+              src={abimg}
               alt="About us"
               className="rounded-lg shadow-lg w-full max-w-md md:max-w-full"
             />

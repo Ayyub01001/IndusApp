@@ -13,7 +13,7 @@ export default function Footer() {
             <img src="/logo.png" alt="Indus Logo" className="h-12 mx-auto sm:mx-0 mb-4" />
             <p className="text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
               Indus Maritime Pvt. Ltd. — Your trusted partner in cargo, logistics,
-              and international trade solutions since 2000.
+              and international trade solutions since 2000...
             </p>
           </div>
 

@@ -1,16 +1,15 @@
 // Gallery.jsx
 import React from "react";
 import Footer from "../components/Footer";
+import gal1 from "../assets/img/gal1.jpg";
+import gal2 from "../assets/img/gal2.jpg";
+import gal3 from "../assets/img/gal3.jpg";
+import gal4 from "../assets/img/gal4.jpg";
+import gal5 from "../assets/img/gal5.jpg";
+import gal6 from "../assets/img/gal6.jpg";
 
 export default function Gallery() {
-  const images = [
-    "/gallery1.jpg",
-    "/gallery2.jpg",
-    "/gallery3.jpg",
-    "/gallery4.jpg",
-    "/gallery5.jpg",
-    "/gallery6.jpg",
-  ];
+  const images = [gal1, gal2, gal3, gal4, gal5, gal6];
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -21,8 +20,15 @@ export default function Gallery() {
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {images.map((src, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={src} alt={`Gallery ${index + 1}`} className="w-full h-60 object-cover" />
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
+              <img
+                src={src}
+                alt={`Gallery ${index + 1}`}
+                className="w-full h-60 object-cover"
+              />
             </div>
           ))}
         </div>
