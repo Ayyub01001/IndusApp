@@ -1,6 +1,7 @@
 // Footer.jsx
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import logo from "../assets/img/logo.png"
 
 export default function Footer() {
   return (
@@ -9,8 +10,8 @@ export default function Footer() {
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & About */}
-          <div className="text-center sm:text-left">
-            <img src="/logo.png" alt="Indus Logo" className="h-12 mx-auto sm:mx-0 mb-4" />
+          <div className="text-center sm:text-left ">
+            <img src={logo}  alt="Indus Logo" className="h-12 mx-auto sm:mx-0 mb-4 bg-white" />
             <p className="text-sm leading-relaxed max-w-xs mx-auto sm:mx-0">
               Indus Maritime Pvt. Ltd. — Your trusted partner in cargo, logistics,
               and international trade solutions since 2000...

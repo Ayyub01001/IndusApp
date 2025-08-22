@@ -1,5 +1,6 @@
 // Navbar.jsx
 import React, { useState } from "react";
+
 import { NavLink } from "react-router-dom";
 import { FaPhoneAlt, FaEnvelope, FaCheckCircle, FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
@@ -41,17 +42,19 @@ export default function Navbar() {
       {/* Main Navbar */}
       <nav className="flex justify-between items-center px-4 sm:px-10 py-3 bg-white border-b border-gray-200">
         {/* Logo */}
-        <div className="flex items-center">
-        <img 
+        <NavLink to="/">    <div className="flex items-center">
+          
+      <img 
   src={logo} 
   alt="Indus Maritime Logo" 
-  className="h-10 sm:h-12 mr-3 object-contain"
+  className="h-10 sm:h-12 mr-3 object-contain cursor-pointer"
 />
+
           <div className="leading-tight">
             <h2 className="text-base sm:text-lg font-bold">INDUS</h2>
             <p className="text-[10px] sm:text-xs">MARITIME PRIVATE LIMITED</p>
           </div>
-        </div>
+        </div></NavLink>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 lg:gap-8 items-center text-base lg:text-lg font-semibold">
